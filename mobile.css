@@ -1,0 +1,45 @@
+.container{
+    background-color: #fff;
+    height: 100vh;
+    width: 80%;
+    border-radius: 0 500px 500px 0;
+    padding: 1rem;
+}
+
+.navbar h1{
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #2B2E39
+}
+
+.header{
+    margin: 2rem 0;
+}
+
+.header h2{
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #2B2E39;
+}
+
+.set-date{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#info{
+    bottom: 27%;
+    left: 50%;
+    max-width: 150px;
+    display: none;
+    font-size: .75rem;
+}
+
+#icon:hover + #info{
+    display: block;
+}
+
+#icon{
+    right: 15%;
+}

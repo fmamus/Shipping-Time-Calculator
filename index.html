@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media ="screen and (max-width: 640px)" href ="mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Shipping Time Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <h1>The Company</h1>
+      </div>
+      <div class="header">
+        <h2>Shipping Time</h2>
+        <h2>Calculator</h2>
+      </div>
+      <div class="set-date">
+        <div>
+          <input style="margin-right: 80px;"
+            type="date"
+            id="datepicker"
+            placeholder="Order Date"
+            />
+          <p id="validMsgDate">Enter valid date</p>
+        </div>
+
+        <div>
+          <select style="margin-right: 80px" name="" id="productstyle">
+            <option value="fabric" selected="true" id="fabric" disabled>Fabric Type</option>
+            <option value="cotton" id="cotton">Cotton</option>
+            <option value="linen" id="linen">Linen</option>
+          </select>
+          <p id="validMsgStyle">Enter valid type</p>
+        </div>
+
+        <div>
+          <input type="number" id="productnumber" placeholder="Quantity">
+          <i id="icon" class="fa-solid fa-circle-info"></i>
+          <span id="info">Shipping Dates May Vary Based on Quantity</span>
+          <p id="validMsgNumber">Between 1-100 
+          </p>
+        </div>
+      </div>
+      <div class="footer">
+        <button id="button" onclick="validNumber(), validDate(), validStyle(), calc()">Calculate</button>
+        <p id="date-p">Please enter your order information to estimate shipping date</p>
+        <h3 id="date-text">26 September 2023</h3>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
