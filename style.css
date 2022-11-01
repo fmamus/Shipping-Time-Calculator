@@ -56,9 +56,12 @@ select{
     padding-right: 2rem !important;
 }
 
+select{
+    color: #8D9092;
+}
+
 select option{
     background: rgba(0, 0, 0, 0.3);
-    color: #8D9092;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
 
