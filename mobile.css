@@ -36,7 +36,7 @@
     font-size: .75rem;
 }
 
-#icon:hover + #info{
+#icon:active + #info{
     display: block;
 }
 
